@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>실습</title>
-  <link rel="stylesheet" href="실습_01.css">
-  <script defer src="./실습_01.js"></script>
+  <title>김도은</title>
+  <link rel="stylesheet" href="./자기소개.css">
 </head>
 <body>
-  <h1>실습</h1>
-  <hr/>
-  <h2>문제1. 색상 조절</h2>
-  <div id="target01">dkb01</div>
-  <input type="color" id="color01">
-  <button onclick="f01();">버튼01</button>
-  <hr/>
-  <h2>문제2. 크기변경</h2>
-  <div id="target02">얖 02</div>
-  <button onclick="f02(50);">50X50</button>
-  <button onclick="f02(100);">10X100</button>
-  <button onclick="f02(200);">200X200</button>
-  <hr/>
-  <h2>문제 3. HTML 태그 접근 </h2>
-  <p>
-    입력받은 데이터 출력하기
-  </p>
+  <div class="grid-container">
+    <img src="../resources/images/111.jpg" alt="등산" class="side-image">
+    
+    <div class="outer">
+      <h1>자기소개</h1>
+      <h3>김도은</h3>
+      
+      <div class="inner" id="target01">
+        <strong><label>이름:</label></strong> <label>김도은</label>
+      </div>
+      
+      <div class="inner" id="target02">
+        <strong><label>나이:</label></strong> <label>25</label>
+      </div>
+      
+      <div class="inner" id="target03">
+        <strong><label>성별:</label></strong> <input type="button" value="남자">
+      </div>
+      
+      <div class="inner" id="target04">
+        <strong><label>Email:</label></strong> <label><mark>aaaaaa@naver.com</mark></label>
+      </div>
+      
+      <div class="inner" id="target05">
+        <strong><label>취미:</label></strong> 
+        <ol type="1">
+          <li><label>등산</label></li>
+          <li><label>음악</label></li>
+          <li><label>게임</label></li>
+          <li><label>꽃 사진 찍기</label></li>
+        </ol>
+      </div>
+    </div>
 
-  <label>구매자</label>
-  <input type="text" id="input31">
-  <br/><br/>
-
-  <label>상품명</label>
-  <input type="text" id="input32">
-  <br/><br/>
-  <label>가격</label>
-  <input type="number" id="input33">
-  <br/><br/>
-  <button onclick="f03();">출력하기</button>
-  <div id="result-area"></div>
+    <img src="../resources/images/123.jpg" alt="오른쪽 설명" class="side-image">
+  </div>
 </body>
 </html>
